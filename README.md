@@ -24,7 +24,9 @@ Though most Brainfuck compilers and interpreters start with an array of 30,000 c
 To use, start by creating a Brainfuck interpreter object:
 
 
-```bf = Brainfuck()```
+```
+bf = Brainfuck()
+```
 
 From there, brainfuck can be exectued using the ```main()``` function, used like ```bf.main("code goes here")```.
 
