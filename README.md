@@ -27,7 +27,7 @@ To use, start by creating a Brainfuck interpreter object:
 ```
 bf = Brainfuck()
 ```
-
+___
 From there, brainfuck can be exectued using the ```main()``` function, used like ```bf.main("code goes here")```. It returns the output of the Brainfuck code.
 
 Input:
@@ -39,6 +39,7 @@ Output:
 ```
 Hello, World!
 ```
+___
 
 The ```show_cells()``` function automatically prints the current byte value in each cell.
 
@@ -51,5 +52,6 @@ Output:
 ```
 [0x00] [0x21]
 ```
+___
 ### It's dangerous to go alone! Take this.
 [https://www.ascii-code.com/](https://www.ascii-code.com/)
