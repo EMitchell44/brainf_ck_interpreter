@@ -5,7 +5,7 @@ This is my first dive into any esoteric language as well as writing interpreters
 Müller (to make a German ü sound, pronounce oo and ee simultaneously) with the goal of writing the smallest compiler possible. Müller's original compiler had a size of only 296 bytes; since then, he's managed to write a compiler less than 200 bytes in size. In a heart-wrenching betrayal of the revered Brainfuck tradition, the files on this interpreter add up to 3,128 bytes, not including dependencies. It would seem I have some catching up to do if I ever want to be a real hacker.
 
 ### Brainfuck 101
-Brainfuck consists only of an array of memory cells (each containing one byte), an instruction pointer (which points to the next instruction to be executed), a data pointer (which points to a memory cell), and eight simple commands:
+Brainfuck consists only of an array of memory cells (each containing one byte), an instruction pointer (which points to the next instruction to be executed), a data pointer (which points to a memory cell), and eight simple instructions:
 
   ```>``` : Increment the data pointer.  
   ```<``` : Decrement the data pointer.  
@@ -16,7 +16,7 @@ Brainfuck consists only of an array of memory cells (each containing one byte), 
   ```[``` : Skip to the matching ```]``` instruction if the byte at the data pointer is zero.  
   ```]``` : Go back to the matching ```[``` instruction if the byte at the data pointer is not zero.  
 
-All other characters are ignored. These eight commands are enough to make the language Turing complete; theoretically, Brainfuck can be used to compute any function, given enough memory.
+All other characters are ignored. These eight instructions are enough to make the language Turing complete; theoretically, Brainfuck can be used to compute any function, given enough memory.
 
 ### Using This Interpreter
 Though most Brainfuck compilers and interpreters start with an array of 30,000 cells, this interpreter creates cells on the fly as needed.
