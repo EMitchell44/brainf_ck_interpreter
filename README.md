@@ -12,7 +12,7 @@ Brainfuck consists only of an array of memory cells, an instruction pointer (whi
   ```+``` : increment the byte at the data pointer  
   ```-``` : decrement the byte at the data pointer  
   ```,``` : accept one byte of input, storing its value in the cell at the data pointer. This is usually done by getting the byte value of one ASCII character.  
-  ```.``` : output the byte at the data pointer  
+  ```.``` : output the byte at the data pointer as a character by its ASCII value  
   ```[``` : skip to the matching ```]``` instruction if the byte at the data pointer is zero  
   ```]``` : go back to the matching ```[``` instruction if the byte at the data pointer is not zero.  
 
