@@ -1,4 +1,4 @@
-# brainfuck_interpreter
+# brainf_ck_interpreter
 ## A Brainfuck interpreter written in Python
 
 This is my first dive into any esoteric language as well as writing interpreters of any kind. Brainfuck was designed in 1993 by Urban
