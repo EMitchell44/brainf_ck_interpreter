@@ -2,19 +2,19 @@
 ## A Brainfuck interpreter written in Python
 
 This is my first dive into any esoteric language as well as writing interpreters of any kind. Brainfuck was designed in 1993 by Urban
-Müller with the goal of writing the smallest compiler possible. Müller's original compiler had a size of only 296 bytes; since then, he's managed to write a compiler less than 200 bytes in size. In a heart-wrenching betrayal of the revered Brainfuck tradition, the files on this interpreter add up to 3,128 bytes, not including dependencies. It would seem I have some catching up to do, if I ever want to be a real hacker.
+Müller with the goal of writing the smallest compiler possible. Müller's original compiler had a size of only 296 bytes; since then, he's managed to write a compiler less than 200 bytes in size. In a heart-wrenching betrayal of the revered Brainfuck tradition, the files on this interpreter add up to 3,128 bytes, not including dependencies. It would seem I have some catching up to do if I ever want to be a real hacker.
 
 ### Brainfuck 101
-Brainfuck consists only of an array of memory cells, an instruction pointer (which points to the next instruction to be executed), a data pointer (which points to a memory cell), and eight simple commands:
+Brainfuck consists only of an array of memory cells (each of which containing one byte), an instruction pointer (which points to the next instruction to be executed), a data pointer (which points to a memory cell), and eight simple commands:
 
-  ```>``` : increment the data pointer  
-  ```<``` : decrement the data pointer  
-  ```+``` : increment the byte at the data pointer  
-  ```-``` : decrement the byte at the data pointer  
-  ```,``` : accept one byte of input, storing its value in the cell at the data pointer. This is usually done by getting the byte value of one ASCII character.  
-  ```.``` : output the byte at the data pointer as a character by its ASCII value  
-  ```[``` : skip to the matching ```]``` instruction if the byte at the data pointer is zero  
-  ```]``` : go back to the matching ```[``` instruction if the byte at the data pointer is not zero.  
+  ```>``` : Increment the data pointer.  
+  ```<``` : Decrement the data pointer.  
+  ```+``` : Increment the byte at the data pointer.  
+  ```-``` : Decrement the byte at the data pointer.  
+  ```,``` : Accept one byte of input, storing its value in the cell at the data pointer. This is usually done by getting the byte value of one ASCII character.  
+  ```.``` : Output the byte at the data pointer as a character by its ASCII value.  
+  ```[``` : Skip to the matching ```]``` instruction if the byte at the data pointer is zero.  
+  ```]``` : Go back to the matching ```[``` instruction if the byte at the data pointer is not zero.  
 
 All other characters are ignored. These eight commands are enough to make the language Turing complete; theoretically, Brainfuck can be used to compute any function, given enough memory.
 
@@ -28,6 +28,7 @@ To use, start by creating a Brainfuck interpreter object:
 
 From there, brainfuck can be exectued using the ```main()``` function, used like ```bf.main("code goes here")```.
 
+Input:
 ```
 print(bf.main("++++++++[->+++++++++<]>.<++++++[->+++++<]>-.+++++++..+++.<+++++++[->----------<]>+++.<+++[->----<]>.<+++++[->+++++++++++<]>.<++++++[->++++<]>.+++.------.--------.<++++++++[->--------<]>---."))
 ```
@@ -37,6 +38,7 @@ Output:
 
 The ```show_cells()``` function shows the current byte value in each cell.
 
+Input:
 ```
 bf.show_cells()
 ```
