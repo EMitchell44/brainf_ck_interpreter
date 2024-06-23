@@ -36,7 +36,9 @@ print(bf.main("++++++++[->+++++++++<]>.<++++++[->+++++<]>-.+++++++..+++.<+++++++
 ```
 
 Output:  
-```Hello, World!```
+```
+Hello, World!
+```
 
 The ```show_cells()``` function shows the current byte value in each cell.
 
@@ -46,4 +48,6 @@ bf.show_cells()
 ```
 
 Output:  
-```[0x00] [0x21]```
+```
+[0x00] [0x21]
+```
