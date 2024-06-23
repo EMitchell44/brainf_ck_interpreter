@@ -26,7 +26,7 @@ To use, start by creating a Brainfuck interpreter object:
 
 ```bf = Brainfuck()```
 
-From there, brainfuck can be exectued using the main() function, used like ```bf.main("code goes here")```.
+From there, brainfuck can be exectued using the ```main()``` function, used like ```bf.main("code goes here")```.
 
 ```
 print(bf.main("++++++++[->+++++++++<]>.<++++++[->+++++<]>-.+++++++..+++.<+++++++[->----------<]>+++.<+++[->----<]>.<+++++[->+++++++++++<]>.<++++++[->++++<]>.+++.------.--------.<++++++++[->--------<]>---."))
@@ -35,7 +35,7 @@ print(bf.main("++++++++[->+++++++++<]>.<++++++[->+++++<]>-.+++++++..+++.<+++++++
 Output:  
 ```Hello, World!```
 
-The show_cells() function shows the current byte value in each cell.
+The ```show_cells()``` function shows the current byte value in each cell.
 
 ```
 bf.show_cells()
