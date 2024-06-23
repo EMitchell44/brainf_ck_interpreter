@@ -28,7 +28,7 @@ To use, start by creating a Brainfuck interpreter object:
 bf = Brainfuck()
 ```
 ___
-From there, brainfuck can be exectued using the ```main()``` function, used like ```bf.main("code goes here")```. It returns the output of the Brainfuck code.
+From there, brainfuck can be exectued using the ```main()``` function, used like ```bf.main("code goes here")```. It returns the output of the brainfuck code.
 
 Input:
 ```
