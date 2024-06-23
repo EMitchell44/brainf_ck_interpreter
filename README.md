@@ -51,3 +51,5 @@ Output:
 ```
 [0x00] [0x21]
 ```
+### It's dangerous to go alone! Take this.
+[https://www.ascii-code.com/](https://www.ascii-code.com/)
